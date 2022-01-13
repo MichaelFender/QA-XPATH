@@ -39,7 +39,7 @@ test("github", async () => {
     // let prof = await driver.findElement(By.xpath('/html/body/div[1]/header/div[7]/details/details-menu/a[1]'))
 
     // await prof.click()
-    let yourProfileButton = await driver.findElement(By.xpath('//a[@data-hydro-click-hmac="438e674df4c5e9c2d3940b3e3308b1bab79f6d20d930a01a638700bfa056061b"]'))
+    let yourProfileButton = await driver.findElement(By.css('.js-feature-preview-indicator-container > details-menu:nth-child(2) > a:nth-child(5)]'))
    await yourProfileButton.click()
    await driver.sleep(2000)
     // await driver.get('https://github.com/michaelfender/')
